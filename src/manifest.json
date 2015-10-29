@@ -10,14 +10,17 @@
     "default_popup": "popup.html"
   },
 
-  "options_page": "options.html"
+  "options_page": "options.html",
 
-  // "background" : {
-  // 	"scripts" : ["eventPage.js"],
-  //   "persistent": false
-  // },
+  "content_scripts": [
+    {
+      "matches": ["https://en.wikipedia.org/*"],
+      "css": ["jojohess-dark-wikipedia-rounded_cs.css"],
+      "js": ["wikipedia_dark_cs.js"]
+    }
+  ],
 
-  // "permissions" : [
-  // 	"alarms"
-  // ]
+  "permissions" : [
+    "https://en.wikipedia.org/*"
+  ]
 }

@@ -14,13 +14,13 @@
 
   "content_scripts": [
     {
-      "matches": ["https://en.wikipedia.org/*"],
+      "matches": ["https://*.wikipedia.org/*"],
       "css": ["jojohess-dark-wikipedia-rounded_cs.css"],
       "js": ["wikipedia_dark_cs.js"]
     }
   ],
 
   "permissions" : [
-    "https://en.wikipedia.org/*"
+    "https://*.wikipedia.org/*"
   ]
 }
